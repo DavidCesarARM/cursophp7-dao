@@ -21,8 +21,13 @@
 	$aluno->insert();
 	echo $aluno;*/
 
-	$usuario = new Usuario();
+	/*$usuario = new Usuario();
 	$usuario->loadByid(5);
 	$usuario->update("professor", "%$#@$");
+	echo $usuario;*/
+
+	$usuario = new Usuario();
+	$usuario->loadByid(2);
+	$usuario->delete();
 	echo $usuario;
 ?>
